@@ -12,6 +12,13 @@
 
 </head>
 
+
+<script>
+    document.querySelector(".contact-form").addEventListener("submit", function() {
+        document.getElementById("formSuccess").style.display = "block";
+    });
+</script>
+
 <body>
     <div class="page">
         <!-- HEADER -->
@@ -287,6 +294,10 @@
                     <button onclick="location.href='#contact'">Choose Premium</button>
                 </article>
             </div>
+            <br><br>
+
+            <h2 class="section-heading" style="text-align: center;">Payments will be taken through BTC</h2>
+
         </section>
 
         <!-- CTA + CONTACT -->
@@ -348,6 +359,15 @@
                         <button type="submit">Send my channel details</button>
                     </div>
                 </form>
+                <p id="formSuccess" style="
+    display:none;
+    margin-top:10px;
+    color:#4ade80;
+    font-size:14px;
+">
+                    ✔ Your details were sent successfully!
+                </p>
+
             </div>
         </section>
 
