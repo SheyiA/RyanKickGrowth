@@ -306,32 +306,32 @@
                     <!-- Hook this up to Netlify / Formspree / backend later -->
                     <div class="field">
                         <label for="name">Name / Alias</label>
-                        <input id="name" type="text" placeholder="Your name or streamer handle" />
+                        <input id="name" name="name" type="text" placeholder="Your name or streamer handle" />
                     </div>
 
                     <div class="field">
                         <label for="email">Email</label>
-                        <input id="email" type="email" placeholder="you@email.com" />
+                        <input id="email" name="email" type="email" placeholder="you@email.com" />
                     </div>
 
                     <div class="field">
                         <label for="kick">Kick channel link</label>
-                        <input id="kick" type="url" placeholder="https://kick.com/yourchannel" />
+                        <input id="kick" name="kick" type="url" placeholder="https://kick.com/yourchannel" />
                     </div>
 
                     <div class="field">
                         <label for="region">Main target country / region</label>
-                        <input id="region" type="text" placeholder="e.g. US, Canada, France, global" />
+                        <input id="region" name="region" type="text" placeholder="e.g. US, Canada, France, global" />
                     </div>
 
                     <div class="field">
                         <label for="schedule">Streaming schedule</label>
-                        <input id="schedule" type="text" placeholder="e.g. Mon–Fri, 7–11 PM EST" />
+                        <input id="schedule" name="schedule" type="text" placeholder="e.g. Mon–Fri, 7–11 PM EST" />
                     </div>
 
                     <div class="field">
                         <label for="package">Preferred package</label>
-                        <select id="package">
+                        <select id="package" name="package">
               <option value="">Select a package</option>
               <option value="Basic">Basic – $75</option>
               <option value="Standard">Standard – $125</option>
@@ -341,11 +341,11 @@
 
                     <div class="field">
                         <label for="notes">Anything else I should know?</label>
-                        <textarea id="notes" rows="3" placeholder="Your goals, current stats, or past promo experience"></textarea>
+                        <textarea id="notes" name="notes" rows="3" placeholder="Your goals, current stats, or past promo experience"></textarea>
                     </div>
 
                     <div class="contact-submit">
-                        <button type="button">Send my channel details</button>
+                        <button type="submit">Send my channel details</button>
                     </div>
                 </form>
             </div>
